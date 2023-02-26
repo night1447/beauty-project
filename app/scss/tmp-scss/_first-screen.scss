@@ -1,0 +1,54 @@
+.first-screen {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: $white;
+  margin-bottom: 80px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 50px;
+    @include adpt($stab-r) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+  }
+
+  & .container {
+    height: 100%;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    max-width: 308px;
+    @include adpt($stab-r){
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__button {
+    border-color: $white;
+    color: $white;
+    letter-spacing: 0.05em;
+    padding-left: 46px;
+    padding-right: 46px;
+
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+  }
+
+  @include adpt($stab-r) {
+    background-position: 60% 0;
+  }
+}

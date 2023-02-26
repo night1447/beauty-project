@@ -1,0 +1,98 @@
+.offers {
+  margin-bottom: 100px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    @include adpt($mtab-r) {
+      font-size: 21px;
+    }
+    @include adpt($stab-r) {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    @include adpt($bmob-r){
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    @include adpt($tab-r) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @include adpt($stab-r) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include adpt($bmob-r) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+    @include adpt($mtab-r) {
+      background-size: 140px 40px;
+    }
+    @include adpt($bmob-r) {
+      background-size: 0 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 30px;
+    background-color: $white;
+    @include adpt($stab-r) {
+      padding: 16px 20px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 20px;
+    height: 166px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    letter-spacing: 0.05em;
+    background: $green;
+    color: $white;
+    padding: 12px 40px;
+
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+  }
+
+  @include adpt($mtab-r) {
+    margin-bottom: 72px;
+  }
+  @include adpt($bmob-r) {
+    margin-bottom: 64px;
+  }
+}

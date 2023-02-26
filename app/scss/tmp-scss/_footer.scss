@@ -1,0 +1,104 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include adpt($mtab-r) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__main {
+    background-color: $white;
+    padding: 38px 0;
+  }
+
+  &__shell {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adpt($tab-r) {
+      flex-basis: 70%;
+    }
+    @include adpt($mtab-r) {
+      flex-basis: 100%;
+      width: 100%;
+    }
+    @include adpt($bmob-r) {
+      flex-direction: column;
+    }
+  }
+
+  &__soc-links {
+    display: flex;
+    align-items: center;
+    @include adpt($mtab-r) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__soc-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid $green;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  &__address {
+    @include adpt($bmob-r) {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__tel {
+    margin-right: 40px;
+    font-size: 16px;
+  }
+
+  &__bottom {
+    background-color: $gray;
+    padding: 25px 0;
+  }
+
+  &__href {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__copyright {
+    font-size: 12px;
+    color: #828282;
+    @include adpt($mtab-r) {
+      margin-bottom: 24px;
+    }
+    @include adpt($stab-r) {
+      text-align: center;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    @include adpt($bmob-r){
+      padding: 12px;
+    }
+  }
+}

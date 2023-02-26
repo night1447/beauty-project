@@ -1,0 +1,138 @@
+
+@include('components/_head.html')
+
+@include('components/_header.html')
+<main class="main">
+    <section class="first-screen"
+             style="background-image: url('images/first-screen-image.jpg')">
+        <div class="container">
+            <div class="first-screen__wrapper">
+                <div class="first-screen__inner">
+                    <h1 class="first-screen__title">
+                        Супер кресло
+                    </h1>
+                    <p class="first-screen__description">
+                        Текст акции всегда отражает суть, а не просто
+                        болтовню, поэтому внимательнее
+                    </p>
+                    <button class="first-screen__button button" type="button">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="offers">
+        <div class="container">
+            <div class="offers__wrapper"
+                 style="background-image: url('images/car-icon.svg')">
+                <h2 class="offers__title">
+                    Специальные предложения
+                </h2>
+                <ul class="offers__list">
+                    <li class="offers__item">
+                        <div class="offers__image"
+                             style="background-image: url('images/goods-image.png')">
+
+                        </div>
+                        <p class="offers__description">
+                            Парикмахерское кресло «Норм» гидравлическое
+                        </p>
+                        <div class="offers__price">
+                            9 900 ₽
+                        </div>
+                        <button class="offers__button button" type="button">
+                            Купить
+                        </button>
+                    </li>
+                    <li class="offers__item">
+                        <div class="offers__image"
+                             style="background-image: url('images/goods-image.png')">
+
+                        </div>
+                        <p class="offers__description">
+                            Парикмахерское кресло «Норм» гидравлическое
+                        </p>
+                        <div class="offers__price">
+                            9 900 ₽
+                        </div>
+                        <button class="offers__button button" type="button">
+                            Купить
+                        </button>
+                    </li>
+                    <li class="offers__item">
+                        <div class="offers__image"
+                             style="background-image: url('images/goods-image.png')">
+
+                        </div>
+                        <p class="offers__description">
+                            Парикмахерское кресло «Норм» гидравлическое
+                        </p>
+                        <div class="offers__price">
+                            9 900 ₽
+                        </div>
+                        <button class="offers__button button" type="button">
+                            Купить
+                        </button>
+                    </li>
+                    <li class="offers__item">
+                        <div class="offers__image"
+                             style="background-image: url('images/goods-image.png')">
+
+                        </div>
+                        <p class="offers__description">
+                            Парикмахерское кресло «Норм» гидравлическое
+                        </p>
+                        <div class="offers__price">
+                            9 900 ₽
+                        </div>
+                        <button class="offers__button button" type="button">
+                            Купить
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="information">
+        <div class="container">
+            <div class="information__wrapper">
+                <ul class="information__blocks">
+                    <li class="information__bonus information__block">
+                        <div class="information__shell" style="background-image: url('images/email-icon.svg')">
+                            <h3 class="information__title">
+                                Получайте бонусы и подарки
+                            </h3>
+                            <p class="information__description information__description_mw">
+                                Каждый месяц разыгрываем
+                                10 000 рублей для наших клиентов
+                            </p>
+                            <form class="information__form">
+                                <label for="email" class="information__label">
+                                    <input type="email" class="information__input" id="email" required
+                                           placeholder="Введите e-mail">
+                                </label>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="information__entered information__block">
+                        <h3 class="information__title">
+                            Заходите к нам
+                        </h3>
+                        <p class="information__description">
+                            Более 300 магазинов
+                            по всей России
+                        </p>
+                        <button class="information__button button" type="button">
+                            Карта магазинов
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+@include('components/_footer.html')
+@include('components/_footer-scripts.html')
